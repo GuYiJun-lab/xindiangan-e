@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://guyijun-lab.github.io/xindiangan-e/sitemap.xml

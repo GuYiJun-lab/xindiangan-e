@@ -1,0 +1,586 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>芯电感-E | 盒立良源 · 电芯间柔性传感隔层</title>
+    <meta name="description" content="面向方形电芯间隙的柔性传感隔层。当前聚焦材料样件与台架验证；压电冲击、BMS 接口与整包联动作为后续研发路线。" />
+    <link rel="canonical" href="https://guyijun-lab.github.io/xindiangan-e/" />
+    <link rel="icon" href="assets/favicon.png" type="image/png" />
+    <link rel="apple-touch-icon" href="assets/apple-touch-icon.png" />
+    <meta property="og:title" content="芯电感-E｜电芯之间的安全神经末梢" />
+    <meta property="og:description" content="柔性压阻路径与专利布局已形成基础。后续验证覆盖台架响应、双模态信号与 PACK 试装。" />
+    <meta property="og:image" content="https://guyijun-lab.github.io/xindiangan-e/assets/og-cover.jpg" />
+    <meta property="og:url" content="https://guyijun-lab.github.io/xindiangan-e/" />
+    <meta property="og:type" content="website" />
+    <link rel="stylesheet" href="css/style.css?v=19" />
+  </head>
+  <body>
+    <a class="skip" href="#main">跳到正文</a>
+    <canvas class="lattice" id="lattice" aria-hidden="true"></canvas>
+    <div class="grain" aria-hidden="true"></div>
+    <aside class="spine" aria-hidden="true">
+      <a href="#product" title="产品技术"></a>
+      <a href="#evidence" title="验证进展"></a>
+      <a href="#scene" title="应用合作"></a>
+      <a href="#people" title="团队成员"></a>
+      <a href="#contact" title="联系"></a>
+    </aside>
+
+    <header class="topbar">
+      <a class="brand" href="#top" aria-current="page">
+        <img src="assets/logo-mark.png" width="42" height="42" alt="盒立良源标志" />
+        <span class="brand-copy">
+          <strong>盒立良源</strong>
+          <em>芯电感-E</em>
+        </span>
+      </a>
+      <nav class="nav" id="nav">
+        <a href="#product">产品技术</a>
+        <a href="#evidence">验证进展</a>
+        <a href="#scene">应用合作</a>
+        <a href="#people">团队成员</a>
+        <a href="#contact">联系我们</a>
+        <a class="nav-cta in-menu-cta" href="#contact">申请联合测试</a>
+      </nav>
+      <div class="auth-actions">
+        <a class="nav-cta" href="#contact">申请联合测试</a>
+      </div>
+      <button class="menu-toggle" id="menuBtn" type="button" aria-label="打开导航" aria-expanded="false">
+        <span></span>
+      </button>
+    </header>
+
+    <main id="main">
+      <section class="hero-band" id="top">
+        <img class="hero-atmos" src="assets/scenes/showroom.jpg" alt="" width="1280" height="720" />
+        <div class="hero wrap">
+          <div class="hero-copy">
+            <p class="kicker">动力电池安全材料 · 概念验证阶段</p>
+            <h1>芯电感-E<span>电芯之间的安全神经末梢</span></h1>
+            <p class="lead">
+              面向方形电芯间隙的柔性传感隔层，尝试通过压阻信号更早识别缓慢鼓包。<br class="lead-break" />
+              当前聚焦材料样件与台架验证；压电冲击、BMS 接口和整包联动作为后续研发路线。
+            </p>
+            <div class="hero-actions">
+              <a class="btn" href="#evidence">查看验证进展</a>
+              <a class="btn btn-ghost" href="#contact">申请联合测试</a>
+            </div>
+            <div class="status-strip">
+              <span><b>压阻</b> 验证中</span>
+              <span><b>压电</b> 下一步</span>
+              <span><b>电芯间隙嵌入</b> 目标结构</span>
+            </div>
+          </div>
+          <div class="hero-visual">
+            <figure class="plate plate-lg callout-frame">
+              <span class="concept">结构效果图</span>
+              <img src="assets/product/hero.jpg" width="1280" height="720" alt="芯电感-E 隔层剖视，可见橡胶基体、导电网络与排线" />
+              <span class="callout callout-a">硅橡胶缓冲基体</span>
+              <span class="callout callout-b">MWCNTs 导电网络</span>
+              <span class="callout callout-c">柔性电极与排线</span>
+            </figure>
+          </div>
+        </div>
+        <div class="hero-summary wrap" aria-label="项目当前验证摘要">
+          <div class="summary-intro">
+            <span>VALIDATION SNAPSHOT</span>
+            <strong>项目当前状态</strong>
+          </div>
+          <div class="summary-item">
+            <span>01 · 产品形态</span>
+            <strong>柔性传感隔层</strong>
+            <small>面向方形电芯间隙</small>
+          </div>
+          <div class="summary-item">
+            <span>02 · 感知路径</span>
+            <strong>压力形变 → 电阻偏移</strong>
+            <small>聚焦缓慢鼓包识别</small>
+          </div>
+          <div class="summary-item">
+            <span>03 · 验证阶段</span>
+            <strong>材料样件与台架</strong>
+            <small>压阻通道验证中</small>
+          </div>
+          <a class="summary-item summary-link" href="#contact">
+            <span>04 · 联合验证</span>
+            <strong>开放合作窗口</strong>
+            <small>夹持 · 采集 · 试装 <b aria-hidden="true">↗</b></small>
+          </a>
+        </div>
+      </section>
+
+      <section class="section" id="stage">
+        <div class="wrap">
+          <div class="section-head">
+            <span class="fig">研发路线</span>
+            <h2>从材料样件走向电池包联合验证</h2>
+          </div>
+          <ol class="route">
+            <li>
+              <h3>已有基础</h3>
+              <p>硅橡胶 / MWCNTs 材料路线，以及相关知识产权布局。</p>
+            </li>
+            <li>
+              <h3>验证中</h3>
+              <p>柔性隔层样件与压力—电阻响应的台架工作。</p>
+            </li>
+            <li>
+              <h3>下一步</h3>
+              <p>双模态信号提取、信号调理与 BMS 采集接口。</p>
+            </li>
+            <li>
+              <h3>合作需求</h3>
+              <p>夹持台架、PACK 试装与联合测试窗口。</p>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <section class="section" id="need">
+        <div class="wrap split-media">
+          <figure class="plate">
+            <span class="concept">应用场景示意</span>
+            <img src="assets/scenes/chassis.jpg" width="1280" height="720" loading="lazy" decoding="async" alt="动力电池包底盘场景示意" />
+            <figcaption>机械载荷与鼓包发生在明显温升之前</figcaption>
+          </figure>
+          <div>
+            <span class="fig">监测窗口</span>
+            <h2>把监测窗口前移到温升之前</h2>
+            <p class="sub">电芯异常往往先表现为产气鼓包或外部冲击，随后才是可测的高温。隔层的目标是捕获更早的力学变化。</p>
+            <ol class="evolve">
+              <li><span>01</span>形变 / 鼓包</li>
+              <li><span>02</span>隔层压力变化</li>
+              <li><span>03</span>电阻信号偏移</li>
+              <li><span>04</span>进入温升风险窗</li>
+            </ol>
+            <p class="source">政策依据：工业和信息化部办公厅《关于进一步加强新能源汽车企业安全体系建设的指导意见》（工信厅函〔2022〕101 号），鼓励热失控实时监测预警与早期抑制。</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section product" id="product">
+        <div class="wrap">
+          <div class="split">
+            <figure class="plate callout-frame">
+              <span class="concept">结构效果图</span>
+              <img src="assets/scenes/sandwich.jpg" width="1280" height="720" loading="lazy" decoding="async" alt="隔层嵌入两枚方形电芯之间的结构效果图" />
+              <figcaption>主结构：电芯间隙嵌入</figcaption>
+            </figure>
+            <div>
+              <span class="fig">产品技术</span>
+              <h2>主路线看缓慢鼓包</h2>
+              <div class="lane">
+                <div class="lane-main">
+                  <p>当前主配方为高分子硅橡胶基体与 MWCNTs 导电逾渗网络。电芯缓慢膨胀时，网络间距变化，电阻可被读取。</p>
+                </div>
+                <div class="lane-next">
+                  <h3>下一步 · 压电通道</h3>
+                  <p>纳米钛酸钡用于瞬态冲击。将在压阻通道稳定后接入同一隔层。</p>
+                </div>
+              </div>
+              <p class="note-alt">研发备选：石墨烯、导电炭黑、PVDF 用于对照与下一代配方筛选。</p>
+              <p class="comp-link"><a href="demo.html">查看系统愿景界面</a></p>
+            </div>
+          </div>
+          <div class="steps-line">
+            <div><span>01</span><h3>材料制备</h3><p>分散、复合、混炼。</p></div>
+            <div><span>02</span><h3>器件封装</h3><p>点胶、固化、电极引出。</p></div>
+            <div><span>03</span><h3>系统接入</h3><p>调理电路与 BMS 采集。</p></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section paper" id="evidence">
+        <div class="wrap">
+          <div class="section-head">
+            <span class="fig">验证进展</span>
+            <h2>当前可公开的研发证据</h2>
+            <p class="sub">下列样件与台架图按产品结构生成，用于展示验证场景；曲线为压阻趋势示意。台架原始记录将在实测完成后替换。</p>
+          </div>
+          <div class="ev-mosaic">
+            <figure class="plate ev-main">
+              <span class="concept">样件示意</span>
+              <img src="assets/lab/sample-overall.jpg" width="1280" height="720" loading="lazy" decoding="async" alt="黑色柔性传感隔层样件放在实验台，旁有钢尺" />
+              <figcaption>TEST-01 样件整体 · 含尺寸参照</figcaption>
+            </figure>
+            <figure class="plate ev-thick">
+              <span class="concept">样件示意</span>
+              <img src="assets/lab/sample-thickness.jpg" width="1152" height="864" loading="lazy" decoding="async" alt="数显卡尺测量黑色橡胶隔层厚度" />
+              <figcaption>厚度测量</figcaption>
+            </figure>
+            <figure class="plate ev-flex">
+              <span class="concept">样件示意</span>
+              <img src="assets/lab/sample-flex.jpg" width="1152" height="864" loading="lazy" decoding="async" alt="手套弯曲柔性隔层，显示可弯折" />
+              <figcaption>弯折状态</figcaption>
+            </figure>
+            <figure class="plate ev-fix">
+              <span class="concept">台架示意</span>
+              <img src="assets/lab/sample-fixture.jpg" width="1280" height="720" loading="lazy" decoding="async" alt="金属夹持台架中的隔层样件，旁接万用表" />
+              <figcaption>TEST-02 夹持与电阻读取</figcaption>
+            </figure>
+            <figure class="plate ev-curve">
+              <img src="assets/lab/sample-curve.jpg" width="1080" height="645" loading="lazy" decoding="async" alt="压阻响应示意曲线：电阻随压力下降" />
+              <figcaption>TEST-03 压阻趋势示意 · 非原始记录</figcaption>
+            </figure>
+          </div>
+          <div class="ip-block">
+            <div class="ip-head">
+              <h3>知识产权</h3>
+              <p class="sub">团队相关炭黑橡胶复合材料发明专利已授权；本产品双模态隔层为核心申请，状态为受理。</p>
+            </div>
+            <div class="split-media ip-split">
+              <div class="ip-body">
+                <div class="certs">
+                  <a href="assets/patents/patent-carbon-rubber.png" target="_blank" rel="noopener" aria-label="打开专利证书原图：炭黑橡胶复合材料（新窗口）">
+                    <img src="assets/thumbs/patent-carbon-rubber.jpg" width="636" height="900" loading="lazy" decoding="async" alt="专利证书缩略图：炭黑橡胶复合材料" />
+                  </a>
+                </div>
+                <div class="ip-facts" aria-label="知识产权说明">
+                  <div>
+                    <span>已授权基础</span>
+                    <strong>炭黑橡胶复合材料</strong>
+                    <p>用于说明团队已具备导电橡胶材料方向的知识产权积累。</p>
+                  </div>
+                  <div>
+                    <span>核心申请</span>
+                    <strong>双模态隔层与嵌入结构</strong>
+                    <p>对应本产品的感知路线与电芯间隙装配形态，当前均为受理阶段。</p>
+                  </div>
+                </div>
+              </div>
+              <div class="patent-list">
+                <article>
+                  <span>IP-01</span>
+                  <div>
+                    <strong>MWCNTs/橡胶柔性压阻-压电双模态传感器隔层及其制备方法</strong>
+                    <em>本产品核心申请</em>
+                  </div>
+                  <b class="badge">受理</b>
+                </article>
+                <article>
+                  <span>IP-02</span>
+                  <div>
+                    <strong>内嵌式电芯膨胀与冲击多维感知柔性隔层装置</strong>
+                    <em>结构形态申请</em>
+                  </div>
+                  <b class="badge">受理</b>
+                </article>
+                <article>
+                  <span>IP-03</span>
+                  <div>
+                    <strong>炭黑橡胶复合材料及其制备方法</strong>
+                    <em>ZL 2023 1 0010605.8 · 材料基础</em>
+                  </div>
+                  <b class="badge">授权</b>
+                </article>
+              </div>
+            </div>
+          </div>
+          <p class="table-hint">功能对比，左右滑动可看全表。芯电感-E 列为方案设计，常规隔层为公开用途归纳。</p>
+          <div class="table-scroll">
+            <table>
+              <thead>
+                <tr>
+                  <th>项目</th>
+                  <th class="ours">芯电感-E</th>
+                  <th>气凝胶隔热片</th>
+                  <th>云母 / 泡棉 / 绝缘膜</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>主要功能</td>
+                  <td class="ours">隔层 + 感知</td>
+                  <td>隔热</td>
+                  <td>绝缘、缓冲或防火</td>
+                </tr>
+                <tr>
+                  <td>静态压力感知</td>
+                  <td class="ours">有 · 验证中</td>
+                  <td>无</td>
+                  <td>无</td>
+                </tr>
+                <tr>
+                  <td>动态冲击感知</td>
+                  <td class="ours">下一步</td>
+                  <td>无</td>
+                  <td>无</td>
+                </tr>
+                <tr>
+                  <td>当前阶段</td>
+                  <td class="ours">实验室 / 专利</td>
+                  <td>工业品</td>
+                  <td>工业品</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="scene">
+        <div class="wrap">
+          <div class="section-head">
+            <span class="fig">应用合作</span>
+            <h2>首个联合验证场景：动力电池包电芯间隙</h2>
+          </div>
+          <div class="application-board">
+            <article class="scene main application-primary">
+              <div class="scene-visual">
+                <img src="assets/scenes/pack.jpg" width="1280" height="720" loading="lazy" decoding="async" alt="动力电池包内部电芯阵列示意" />
+                <span class="scene-no" aria-hidden="true">01</span>
+                <p>PRIMARY VALIDATION · PACK CELL GAP</p>
+              </div>
+              <div class="body">
+                <div class="scene-status">
+                  <span class="stag stag-doing">当前验证场景</span>
+                  <em>台架联合验证开放</em>
+                </div>
+                <h3>新能源汽车<br />动力电池包</h3>
+                <p class="scene-lead">将柔性传感隔层布置在方形电芯间隙，在明显温升前读取缓慢鼓包引起的电阻变化。</p>
+                <dl class="scene-facts">
+                  <div><dt>布置位置</dt><dd>方形电芯间隙</dd></div>
+                  <div><dt>监测目标</dt><dd>鼓包形变—电阻偏移</dd></div>
+                  <div><dt>接口方向</dt><dd>预留 BMS 采集通道</dd></div>
+                </dl>
+                <a class="btn scene-cta" href="#contact">申请台架联合测试 <span aria-hidden="true">↗</span></a>
+              </div>
+            </article>
+
+            <aside class="scene-path" aria-label="后续应用拓展路线">
+              <header class="path-head">
+                <span class="fig">场景路线</span>
+                <h3>从电芯间隙出发，延展结构感知能力</h3>
+                <p>先完成压阻通道的稳定验证，再根据装配条件与信号链成熟度拓展应用。</p>
+              </header>
+              <div class="scene-follow">
+                <article>
+                  <div class="follow-visual">
+                    <img src="assets/scenes/charging.jpg" width="1280" height="720" loading="lazy" decoding="async" alt="充电与储能应用场景" />
+                    <span aria-hidden="true">02</span>
+                  </div>
+                  <div class="follow-copy">
+                    <div class="follow-meta"><span>拓展方向</span><em>储备验证</em></div>
+                    <h3>充电与储能</h3>
+                    <p>面向储能柜与密闭电气空间，探索夹层受压和结构形变监测。</p>
+                  </div>
+                </article>
+                <article>
+                  <div class="follow-visual">
+                    <img src="assets/scenes/chassis.jpg" width="1280" height="720" loading="lazy" decoding="async" alt="新能源汽车底盘防护应用场景" />
+                    <span aria-hidden="true">03</span>
+                  </div>
+                  <div class="follow-copy">
+                    <div class="follow-meta"><span>拓展方向</span><em>待通道接入</em></div>
+                    <h3>底盘冲击防护</h3>
+                    <p>待压电通道接入后，评估底部冲击与持续挤压的双模态识别。</p>
+                  </div>
+                </article>
+              </div>
+            </aside>
+          </div>
+
+          <div class="offer" aria-label="联合验证资源对接">
+            <article class="offer-side offer-team">
+              <span class="offer-label">项目团队提供</span>
+              <h3>材料、样件与技术边界</h3>
+              <ul>
+                <li>柔性传感隔层实验室样件</li>
+                <li>结构图、材料路线与专利清单</li>
+                <li>测试方案沟通与信号判读支持</li>
+              </ul>
+            </article>
+            <div class="offer-core" aria-hidden="true">
+              <span>协同接口</span>
+              <strong>联合台架<br />验证</strong>
+              <small>样件 × 设备 × 数据</small>
+            </div>
+            <article class="offer-side offer-partner">
+              <span class="offer-label">合作伙伴提供</span>
+              <h3>设备、通道与试装窗口</h3>
+              <ul>
+                <li>电芯夹持或压力加载台架</li>
+                <li>BMS 从控与数据采集通道</li>
+                <li>PACK 结构尺寸及试装条件</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="people">
+        <div class="wrap">
+          <div class="section-head">
+            <span class="fig">团队成员</span>
+            <h2>项目职责与当前交付</h2>
+            <p class="sub team-intro">团队围绕材料路线、样件工艺、成本验证和技术传播协同推进。每位成员以当前承担的工作包为核心，直接对应项目从样件准备到联合测试的实际需求。</p>
+          </div>
+          <div class="crew">
+            <article class="lead-card">
+              <div class="portrait"><img src="assets/team/gu-yijun-ppt.png" width="933" height="1244" loading="lazy" decoding="async" alt="顾益峻" /></div>
+              <div class="copy">
+                <span class="person-role">项目负责人</span>
+                <h3>顾益峻</h3>
+                <p class="person-title">团队创始人</p>
+                <p class="person-bio">统一材料路线、知识产权与验证节奏，并协调样件准备与外部对接。</p>
+                <p class="delivery"><b>当前交付</b><span>研发路线、专利清单、测试需求书</span></p>
+              </div>
+            </article>
+            <div class="crew-minis">
+              <article class="member">
+                <div class="portrait"><img src="assets/team/yu-bingqian-ppt.png" width="790" height="1053" loading="lazy" decoding="async" alt="郁冰倩" /></div>
+                <div class="member-copy">
+                  <span class="person-role">财务管理</span>
+                  <h3>郁冰倩</h3>
+                  <p class="person-title">资金管理 · 财务分析 · 合规</p>
+                  <p class="person-bio">拆解材料、试制与测试的阶段成本，持续更新样件和台架预算。</p>
+                  <p class="delivery"><b>当前交付</b><span>成本模型与资金使用计划</span></p>
+                </div>
+              </article>
+              <article class="member">
+                <div class="portrait"><img src="assets/team/liao-caiwei-ppt.png" width="978" height="1304" loading="lazy" decoding="async" alt="廖采薇" /></div>
+                <div class="member-copy">
+                  <span class="person-role">工艺与品控</span>
+                  <h3>廖采薇</h3>
+                  <p class="person-title">生产线搭建 · 工艺优化</p>
+                  <p class="person-bio">梳理混炼、成型、固化与电极引出工艺，记录尺寸和批次质量。</p>
+                  <p class="delivery"><b>当前交付</b><span>试制流程与质量记录表</span></p>
+                </div>
+              </article>
+              <article class="member">
+                <div class="portrait"><img src="assets/team/guo-yifei-ppt.png" width="1086" height="1448" loading="lazy" decoding="async" alt="郭翼飞" /></div>
+                <div class="member-copy">
+                  <span class="person-role">品牌与运营</span>
+                  <h3>郭翼飞</h3>
+                  <p class="person-title">对外宣传 · 运营策划</p>
+                  <p class="person-bio">把产品结构、研发阶段和验证证据做成统一视觉与对外资料。</p>
+                  <p class="delivery"><b>当前交付</b><span>技术图解、官网与合作资料</span></p>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="advisor-block">
+            <div class="advisor-heading">
+              <div>
+                <span class="fig">指导团队</span>
+                <h3>从材料研究到产业验证</h3>
+              </div>
+              <p>围绕材料配方、样件制造和数字化采集，为项目关键技术路线与联合验证提供跨领域支持。</p>
+            </div>
+            <div class="advisors">
+              <article class="advisor">
+                <div class="advisor-portrait">
+                  <img src="assets/team/chen-yulong.jpg" width="508" height="760" loading="lazy" decoding="async" alt="陈玉龙" />
+                  <span aria-hidden="true">ADVISOR · 01</span>
+                </div>
+                <div class="advisor-copy">
+                  <span class="person-role">专业老师代表</span>
+                  <h3>陈玉龙</h3>
+                  <p class="person-title">副教授 · 硕士生导师</p>
+                  <p class="person-org">浙江工业大学高分子材料与工程<br />浙工大三门研究院副院长</p>
+                  <p class="person-bio">指导高分子复合材料配方、导电填料分散与制备路径。</p>
+                </div>
+              </article>
+              <article class="advisor">
+                <div class="advisor-portrait">
+                  <img src="assets/team/zuo-fu.jpg" width="313" height="398" loading="lazy" decoding="async" alt="左福" />
+                  <span aria-hidden="true">ADVISOR · 02</span>
+                </div>
+                <div class="advisor-copy">
+                  <span class="person-role">车企代表</span>
+                  <h3>左福</h3>
+                  <p class="person-title">制造总监</p>
+                  <p class="person-org">摩登汽车有限公司<br />新能源汽车工厂建设</p>
+                  <p class="person-bio">结合新能源制造现场，为样件可制造性与试装流程提供建议。</p>
+                </div>
+              </article>
+              <article class="advisor">
+                <div class="advisor-portrait">
+                  <img src="assets/team/wei-qinglai.jpg" width="302" height="396" loading="lazy" decoding="async" alt="魏庆来" />
+                  <span aria-hidden="true">ADVISOR · 03</span>
+                </div>
+                <div class="advisor-copy">
+                  <span class="person-role">互联网公司代表</span>
+                  <h3>魏庆来</h3>
+                  <p class="person-title">董事长</p>
+                  <p class="person-org">苏州原科数字科技有限公司<br />国家重点研发计划项目负责人</p>
+                  <p class="person-bio">为后续信号采集、数据流转与监测服务架构提供数字化支持。</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="contact">
+        <div class="wrap contact-shell">
+          <img src="assets/scenes/lobby.jpg" alt="" width="1280" height="720" loading="lazy" decoding="async" />
+          <div class="contact">
+            <div>
+              <span class="fig">联合验证</span>
+              <h2>申请联合测试</h2>
+              <p class="sub">面向材料样件、夹持台架、BMS 采集与 PACK 试装开放合作。提交后，合作邀请将发送至项目负责人接收邮箱，并保留明确的发送结果提示。</p>
+              <ol class="contact-points">
+                <li><span>01</span><div><strong>说明合作方向</strong><p>选择样件试用、台架测试、BMS 采集或 PACK 试装。</p></div></li>
+                <li><span>02</span><div><strong>补充基础条件</strong><p>简要说明可提供的设备、测试窗口或应用需求。</p></div></li>
+                <li><span>03</span><div><strong>负责人回访</strong><p>团队收到邮件后，将根据验证阶段与联系方式进一步沟通。</p></div></li>
+              </ol>
+            </div>
+            <!-- FormSubmit 接口已绑定；首次使用需由接收邮箱点击 Activate Form，脚本会区分待激活与真正发送成功。 -->
+            <form id="form" data-endpoint="https://formsubmit.co/ajax/1473809950@qq.com">
+              <input class="hp-field" type="text" name="website" tabindex="-1" autocomplete="off" aria-hidden="true" />
+              <div class="form-row">
+                <label>
+                  <span>姓名</span>
+                  <input type="text" name="name" required autocomplete="name" placeholder="对接人姓名" />
+                </label>
+                <label>
+                  <span>联系电话</span>
+                  <input type="tel" name="phone" required autocomplete="tel" placeholder="手机或座机" />
+                </label>
+              </div>
+              <label>
+                <span>单位 / 机构</span>
+                <input type="text" name="organization" required autocomplete="organization" placeholder="企业、课题组或机构名称" />
+              </label>
+              <label>
+                <span>邮箱</span>
+                <input type="email" name="email" required autocomplete="email" placeholder="用于接收回访" />
+              </label>
+              <label>
+                <span>合作方向</span>
+                <select name="cooperation" required>
+                  <option value="" selected disabled>请选择一项</option>
+                  <option value="材料样件试用">材料样件试用</option>
+                  <option value="夹持台架联合测试">夹持台架联合测试</option>
+                  <option value="BMS 采集与接口验证">BMS 采集与接口验证</option>
+                  <option value="PACK 试装与应用验证">PACK 试装与应用验证</option>
+                  <option value="其他合作">其他合作</option>
+                </select>
+              </label>
+              <label>
+                <span>合作说明</span>
+                <textarea name="message" required minlength="20" maxlength="1000" placeholder="请简要说明测试需求、可提供条件或期望合作方式（至少 20 字）"></textarea>
+              </label>
+              <label class="consent">
+                <input type="checkbox" name="consent" required />
+                <span>我同意团队仅为本次合作沟通使用以上联系方式；请勿提交商业秘密或敏感技术数据。</span>
+              </label>
+              <button class="btn submit-btn" type="submit"><span>提交合作邀请</span></button>
+              <p class="form-note" id="formNote" role="status" aria-live="polite"></p>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="wrap foot">
+        <span>盒立良源 · 芯电感-E · 2026</span>
+        <span><a href="demo.html">系统愿景</a></span>
+      </div>
+    </footer>
+    <script src="js/main.js?v=3"></script>
+  </body>
+</html>

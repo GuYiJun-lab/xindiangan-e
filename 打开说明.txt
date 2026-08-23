@@ -1,0 +1,15 @@
+线上地址：
+
+https://guyijun-lab.github.io/xindiangan-e/
+
+本地打开：index.html
+
+- index.html   项目首页
+- demo.html    系统愿景 / 交互概念
+- 404.html     页面不存在时的提示
+
+合作邀请表单：
+
+- 接收接口已绑定到 1473809950@qq.com，并已完成 FormSubmit 首次激活。
+- 请用上面的正式网址再提交一次，确认 GitHub Pages 环境下完整合作信息仍能送达。
+
